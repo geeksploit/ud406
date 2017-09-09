@@ -19,10 +19,10 @@ public class NinePatchDemo extends ApplicationAdapter {
     private FitViewport viewport;
 
     // TODO: Add a Texture for the raw platform image
-    Texture platformTexture;
+    private Texture platformTexture;
 
     // TODO: Add a NinePatch
-    NinePatch platformNinePatch;
+    private NinePatch platformNinePatch;
 
     @Override
     public void create() {
