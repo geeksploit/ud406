@@ -30,9 +30,10 @@ public class NinePatchDemo extends ApplicationAdapter {
         viewport = new FitViewport(WORLD_SIZE, WORLD_SIZE);
 
         // TODO: Load the platform texture (Look for the file in android/assets)
-
+        platformTexture = new Texture("platform.png");
 
         // TODO: Initialize the NinePatch using the texture and the EDGE constant
+        platformNinePatch = new NinePatch(platformTexture, EDGE, EDGE, EDGE, EDGE);
 
     }
 
