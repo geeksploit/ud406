@@ -67,7 +67,7 @@ public class NinePatchDemo extends ApplicationAdapter {
     public void dispose() {
         batch.dispose();
         // TODO: Dispose of the texture
-
+        platformTexture.dispose();
 
     }
 }
