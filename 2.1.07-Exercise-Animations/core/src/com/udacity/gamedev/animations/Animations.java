@@ -73,8 +73,7 @@ public class Animations extends ApplicationAdapter {
 
         float elapsedTime = MathUtils.nanoToSec * (TimeUtils.nanoTime() - startTime);
 
-        // TODO: Use getKeyFrame() to get the right frame from the walk loop
-        TextureRegion walkLoopTexture = new TextureRegion(new Texture("walk-1-right.png"));
+        TextureRegion walkLoopTexture = walkLoop.getKeyFrame(elapsedTime);
 
         drawRegionCentered(
                 batch,
