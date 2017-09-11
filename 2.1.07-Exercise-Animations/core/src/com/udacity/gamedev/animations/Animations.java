@@ -41,8 +41,7 @@ public class Animations extends ApplicationAdapter {
 
         Array<TextureRegion> walkLoopTextures = new Array<TextureRegion>();
 
-        // TODO: Add walk-1-right.png to walkLoopTextures
-
+        walkLoopTextures.add(new TextureRegion(new Texture("walk-1-right.png")));
 
         // TODO: Add walk-2-right.png to walkLoopTextures
 
