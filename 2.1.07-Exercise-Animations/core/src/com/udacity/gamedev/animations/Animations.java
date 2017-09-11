@@ -71,8 +71,7 @@ public class Animations extends ApplicationAdapter {
         batch.setProjectionMatrix(viewport.getCamera().combined);
         batch.begin();
 
-        // TODO: Compute the elapsed time in seconds since startTime
-
+        float elapsedTime = MathUtils.nanoToSec * (TimeUtils.nanoTime() - startTime);
 
         // TODO: Use getKeyFrame() to get the right frame from the walk loop
         TextureRegion walkLoopTexture = new TextureRegion(new Texture("walk-1-right.png"));
