@@ -45,9 +45,7 @@ public class Animations extends ApplicationAdapter {
         walkLoopTextures.add(new TextureRegion(new Texture("walk-2-right.png")));
         walkLoopTextures.add(new TextureRegion(new Texture("walk-3-right.png")));
 
-        // TODO: Initialize walkLoop with a new animation in LOOP_PINGPONG mode
-        // Use WALK_LOOP_FRAME_DURATION
-
+        walkLoop = new Animation(WALK_LOOP_FRAME_DURATION, walkLoopTextures, PlayMode.LOOP_PINGPONG);
 
         Array<TextureRegion> explosionTextures = new Array<TextureRegion>();
         explosionTextures.add(new TextureRegion(new Texture("explosion-large.png")));
