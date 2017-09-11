@@ -37,8 +37,7 @@ public class Animations extends ApplicationAdapter {
         batch = new SpriteBatch();
         viewport = new ExtendViewport(100, 100);
 
-        // TODO: Set startTime using TimeUtils.nanoTime()
-
+        startTime = TimeUtils.nanoTime();
 
         Array<TextureRegion> walkLoopTextures = new Array<TextureRegion>();
 
