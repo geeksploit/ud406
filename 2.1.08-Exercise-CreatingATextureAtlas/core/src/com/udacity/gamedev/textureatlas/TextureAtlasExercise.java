@@ -34,8 +34,7 @@ public class TextureAtlasExercise extends ApplicationAdapter implements AssetErr
 
         assetManager.load(ATLAS, TextureAtlas.class);
 
-        // TODO: Call finishLoading() on your AssetManager
-
+        assetManager.finishLoading();
 
         // TODO: Get the TextureAtlas from the asset manager
 
