@@ -7,6 +7,9 @@ import com.badlogic.gdx.assets.AssetErrorListener;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+
+import static com.badlogic.gdx.graphics.g2d.TextureAtlas.*;
 
 public class TextureAtlasExercise extends ApplicationAdapter implements AssetErrorListener {
 
@@ -19,8 +22,7 @@ public class TextureAtlasExercise extends ApplicationAdapter implements AssetErr
 
     private SpriteBatch batch;
 
-    // TODO: Add an AtlasRegion to hold the standing right sprite
-
+    private AtlasRegion standingRight;
 
     @Override
     public void create() {
