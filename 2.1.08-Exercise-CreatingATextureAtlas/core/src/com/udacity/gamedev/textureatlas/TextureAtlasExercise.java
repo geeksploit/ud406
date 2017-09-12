@@ -4,6 +4,7 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetDescriptor;
 import com.badlogic.gdx.assets.AssetErrorListener;
+import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
@@ -14,8 +15,7 @@ public class TextureAtlasExercise extends ApplicationAdapter implements AssetErr
     private static final String ATLAS = "images/gigagal.pack.atlas";
     private static final String STANDING_RIGHT = "standing-right";
 
-    // TODO: Add an AssetManager
-
+    private AssetManager assetManager;
 
     private SpriteBatch batch;
 
