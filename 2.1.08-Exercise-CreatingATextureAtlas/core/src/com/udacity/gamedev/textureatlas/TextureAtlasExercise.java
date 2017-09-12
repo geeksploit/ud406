@@ -30,8 +30,7 @@ public class TextureAtlasExercise extends ApplicationAdapter implements AssetErr
 
         assetManager = new AssetManager();
 
-        // TODO: Set this as the AssetManager's error listener
-
+        assetManager.setErrorListener(this);
 
         // TODO: tell the AssetManager to load the TextureAtlas with name ATLAS
 
