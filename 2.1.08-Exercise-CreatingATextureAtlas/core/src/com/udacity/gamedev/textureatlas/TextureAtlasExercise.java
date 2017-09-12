@@ -48,11 +48,18 @@ public class TextureAtlasExercise extends ApplicationAdapter implements AssetErr
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
 
-
-        // TODO: Draw the standing right AtlasRegion
-        // Hint, you need to use the somewhat horrific version of draw with signature:
-        // draw (Texture texture, float x, float y, float originX, float originY, float width, float height, float scaleX,
-        // float scaleY, float rotation, int srcX, int srcY, int srcWidth, int srcHeight, boolean flipX, boolean flipY)
+        batch.draw(
+                standingRight.getTexture(),
+                0, 0, 0, 0,
+                standingRight.getRegionWidth(),
+                standingRight.getRegionHeight(),
+                1, 1, 0,
+                standingRight.getRegionX(),
+                standingRight.getRegionY(),
+                standingRight.getRegionWidth(),
+                standingRight.getRegionHeight(),
+                false, false
+        );
 
         batch.end();
     }
