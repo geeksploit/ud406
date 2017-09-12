@@ -38,7 +38,7 @@ public class TextureAtlasExercise extends ApplicationAdapter implements AssetErr
 
         TextureAtlas atlas = assetManager.get(ATLAS);
 
-        // TODO: Populate your AtlasRegion using findRegion() on your Atlas
+        standingRight = atlas.findRegion(STANDING_RIGHT);
 
     }
 
