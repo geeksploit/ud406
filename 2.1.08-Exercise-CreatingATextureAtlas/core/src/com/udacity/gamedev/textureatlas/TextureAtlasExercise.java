@@ -65,7 +65,6 @@ public class TextureAtlasExercise extends ApplicationAdapter implements AssetErr
     @Override
     public void dispose() {
         batch.dispose();
-        // TODO: Dispose of the AssetManager
-
+        assetManager.dispose();
     }
 }
