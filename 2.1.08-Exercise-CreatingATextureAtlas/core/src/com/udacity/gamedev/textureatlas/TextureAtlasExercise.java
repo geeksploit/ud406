@@ -28,8 +28,7 @@ public class TextureAtlasExercise extends ApplicationAdapter implements AssetErr
     public void create() {
         batch = new SpriteBatch();
 
-        // TODO: Initialize your AssetManager
-
+        assetManager = new AssetManager();
 
         // TODO: Set this as the AssetManager's error listener
 
