@@ -46,9 +46,7 @@ public class GameplayScreen extends ScreenAdapter {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         spriteBatch.setProjectionMatrix(extendViewport.getCamera().combined);
-
-        // TODO: Begin the SpriteBatch
-
+        spriteBatch.begin();
 
         // TODO: Draw the standing right AtlasRegion
 
