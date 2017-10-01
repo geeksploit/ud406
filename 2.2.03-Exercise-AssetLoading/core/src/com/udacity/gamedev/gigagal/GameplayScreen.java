@@ -30,9 +30,7 @@ public class GameplayScreen extends ScreenAdapter {
     @Override
     public void dispose() {
         Assets.instance.dispose();
-
-        // TODO: Dispose of the SpriteBatch
-
+        spriteBatch.dispose();
     }
 
     @Override
