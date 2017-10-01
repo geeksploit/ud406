@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.udacity.gamedev.gigagal.util.Assets;
 import com.udacity.gamedev.gigagal.util.Constants;
@@ -47,6 +48,8 @@ public class GameplayScreen extends ScreenAdapter {
 
         spriteBatch.setProjectionMatrix(extendViewport.getCamera().combined);
         spriteBatch.begin();
+
+        TextureRegion region = Assets.instance.gigaGalAssets.standingRight;
 
         // TODO: Draw the standing right AtlasRegion
 
