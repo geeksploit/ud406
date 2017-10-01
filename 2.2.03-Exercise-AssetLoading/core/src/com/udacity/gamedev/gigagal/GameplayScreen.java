@@ -50,8 +50,6 @@ public class GameplayScreen extends ScreenAdapter {
 
         // TODO: Draw the standing right AtlasRegion
 
-
-        // TODO: End the SpriteBatch
-
+        spriteBatch.end();
     }
 }
