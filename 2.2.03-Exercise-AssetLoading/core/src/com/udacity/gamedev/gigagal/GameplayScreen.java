@@ -3,6 +3,7 @@ package com.udacity.gamedev.gigagal;
 import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
+import com.udacity.gamedev.gigagal.util.Assets;
 
 
 public class GameplayScreen extends ScreenAdapter {
@@ -15,8 +16,7 @@ public class GameplayScreen extends ScreenAdapter {
     @Override
     public void show() {
 
-        // TODO: Initialize the Assets instance
-
+        Assets.instance.init();
 
         // TODO: Initalize the SpriteBatch
 
