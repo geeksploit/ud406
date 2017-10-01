@@ -1,9 +1,10 @@
 package com.udacity.gamedev.gigagal.util;
 
+import com.badlogic.gdx.graphics.Color;
+
 public class Constants {
 
-    // TODO: Set a BACKGROUND_COLOR We recommend Color.SKY
-
+    public static Color BACKGROUND_COLOR = Color.SKY;
 
     // TODO: Set a WORLD_SIZE
     /**
