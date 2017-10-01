@@ -51,7 +51,11 @@ public class GameplayScreen extends ScreenAdapter {
 
         TextureRegion region = Assets.instance.gigaGalAssets.standingRight;
 
-        // TODO: Draw the standing right AtlasRegion
+        spriteBatch.draw(region.getTexture(), 0, 0, 0, 0,
+                region.getRegionWidth(), region.getRegionHeight(), 1, 1, 0,
+                region.getRegionX(), region.getRegionY(),
+                region.getRegionWidth(), region.getRegionHeight(),
+                false, false);
 
         spriteBatch.end();
     }
