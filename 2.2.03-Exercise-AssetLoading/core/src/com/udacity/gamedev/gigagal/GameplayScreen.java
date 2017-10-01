@@ -1,65 +1,62 @@
 package com.udacity.gamedev.gigagal;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.utils.viewport.ExtendViewport;
+import com.udacity.gamedev.gigagal.util.Assets;
+import com.udacity.gamedev.gigagal.util.Constants;
 
 
 public class GameplayScreen extends ScreenAdapter {
 
     public static final String TAG = GameplayScreen.class.getName();
 
-    // TODO: Add a SpriteBatch
-
-
-    // TODO: Add an ExtendViewport
-
+    private SpriteBatch spriteBatch;
+    private ExtendViewport extendViewport;
 
     @Override
     public void show() {
 
-        // TODO: Initialize the Assets instance
-
-
-        // TODO: Initalize the SpriteBatch
-
-
-        // TODO: Initialize the viewport
-
+        Assets.instance.init();
+        spriteBatch = new SpriteBatch();
+        extendViewport = new ExtendViewport(Constants.WORLD_SIZE, Constants.WORLD_SIZE);
     }
 
     @Override
     public void resize(int width, int height) {
-        // TODO: Update the viewport
-
+        extendViewport.update(width, height);
     }
 
     @Override
     public void dispose() {
-        // TODO: Dispose of the Assets instance
-
-
-        // TODO: Dispose of the SpriteBatch
-
+        Assets.instance.dispose();
+        spriteBatch.dispose();
     }
 
     @Override
     public void render(float delta) {
+        extendViewport.apply();
+        Gdx.gl.glClearColor(
+                Constants.BACKGROUND_COLOR.r,
+                Constants.BACKGROUND_COLOR.g,
+                Constants.BACKGROUND_COLOR.b,
+                Constants.BACKGROUND_COLOR.a);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-        // TODO: Apply the viewport
+        spriteBatch.setProjectionMatrix(extendViewport.getCamera().combined);
+        spriteBatch.begin();
 
+        TextureRegion region = Assets.instance.gigaGalAssets.standingRight;
 
-        // TODO: Clear the screen to the BACKGROUND_COLOR
+        spriteBatch.draw(region.getTexture(), 0, 0, 0, 0,
+                region.getRegionWidth(), region.getRegionHeight(), 1, 1, 0,
+                region.getRegionX(), region.getRegionY(),
+                region.getRegionWidth(), region.getRegionHeight(),
+                false, false);
 
-
-        // TODO: Set the SpriteBatch's projection matrix
-
-
-        // TODO: Begin the SpriteBatch
-
-
-        // TODO: Draw the standing right AtlasRegion
-
-
-        // TODO: End the SpriteBatch
-
+        spriteBatch.end();
     }
 }
