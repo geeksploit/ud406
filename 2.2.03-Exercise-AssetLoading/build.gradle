@@ -94,18 +94,16 @@ project(":core") {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
     }
 
-
-    // TODO: Uncomment the following definition of the packTextures task
-//    task packTextures {
-//        def inputDir = "$rootDir/core/rawAssets/sprites"
-//        def outputDir = "$rootDir/android/assets/images"
-//        inputs.dir inputDir
-//        outputs.dir outputDir
-//        doLast {
-//            delete(outputDir)
-//            TexturePacker.process(inputDir, outputDir, "gigagal.pack")
-//        }
-//    }
+    task packTextures {
+        def inputDir = "$rootDir/core/rawAssets/sprites"
+        def outputDir = "$rootDir/android/assets/images"
+        inputs.dir inputDir
+        outputs.dir outputDir
+        doLast {
+            delete(outputDir)
+            TexturePacker.process(inputDir, outputDir, "gigagal.pack")
+        }
+    }
 
       // TODO: Uncomment the following line declaring a dependency between compileJava and packTextures
 //    project.tasks.compileJava.dependsOn packTextures
