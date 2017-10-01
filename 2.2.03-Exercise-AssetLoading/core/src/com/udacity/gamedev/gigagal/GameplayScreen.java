@@ -2,6 +2,7 @@ package com.udacity.gamedev.gigagal;
 
 import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.utils.viewport.ExtendViewport;
 
 
 public class GameplayScreen extends ScreenAdapter {
@@ -9,9 +10,7 @@ public class GameplayScreen extends ScreenAdapter {
     public static final String TAG = GameplayScreen.class.getName();
 
     private SpriteBatch spriteBatch;
-
-    // TODO: Add an ExtendViewport
-
+    private ExtendViewport extendViewport;
 
     @Override
     public void show() {
