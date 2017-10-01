@@ -1,14 +1,14 @@
 package com.udacity.gamedev.gigagal;
 
 import com.badlogic.gdx.ScreenAdapter;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 
 public class GameplayScreen extends ScreenAdapter {
 
     public static final String TAG = GameplayScreen.class.getName();
 
-    // TODO: Add a SpriteBatch
-
+    private SpriteBatch spriteBatch;
 
     // TODO: Add an ExtendViewport
 
