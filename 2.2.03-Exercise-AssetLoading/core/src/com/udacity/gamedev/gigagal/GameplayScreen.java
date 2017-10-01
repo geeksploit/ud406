@@ -1,6 +1,8 @@
 package com.udacity.gamedev.gigagal;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;
+import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.udacity.gamedev.gigagal.util.Assets;
@@ -36,9 +38,12 @@ public class GameplayScreen extends ScreenAdapter {
     @Override
     public void render(float delta) {
         extendViewport.apply();
-
-        // TODO: Clear the screen to the BACKGROUND_COLOR
-
+        Gdx.gl.glClearColor(
+                Constants.BACKGROUND_COLOR.r,
+                Constants.BACKGROUND_COLOR.g,
+                Constants.BACKGROUND_COLOR.b,
+                Constants.BACKGROUND_COLOR.a);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         // TODO: Set the SpriteBatch's projection matrix
 
