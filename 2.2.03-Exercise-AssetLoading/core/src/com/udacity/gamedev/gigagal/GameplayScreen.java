@@ -24,8 +24,7 @@ public class GameplayScreen extends ScreenAdapter {
 
     @Override
     public void resize(int width, int height) {
-        // TODO: Update the viewport
-
+        extendViewport.update(width, height);
     }
 
     @Override
