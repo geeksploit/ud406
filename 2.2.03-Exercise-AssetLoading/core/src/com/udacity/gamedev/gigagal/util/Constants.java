@@ -16,7 +16,6 @@ public class Constants {
 
     public static final String TEXTURE_ATLAS = "images/gigagal.pack.atlas";
 
-    // TODO: Add a constant for the name of the standing-right sprite
-
+    public static final String STANDING_RIGHT = "standing-right";
 
 }
