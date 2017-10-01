@@ -17,9 +17,7 @@ public class GameplayScreen extends ScreenAdapter {
     public void show() {
 
         Assets.instance.init();
-
-        // TODO: Initalize the SpriteBatch
-
+        spriteBatch = new SpriteBatch();
 
         // TODO: Initialize the viewport
 
