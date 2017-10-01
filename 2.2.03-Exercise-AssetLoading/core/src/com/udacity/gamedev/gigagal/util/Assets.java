@@ -53,12 +53,10 @@ public class Assets implements Disposable, AssetErrorListener {
 
     public class GigaGalAssets {
 
-        // TODO: Add a AtlasRegion to hold the standing-right sprite
-
+        public final TextureAtlas.AtlasRegion standingRight;
 
         public GigaGalAssets(TextureAtlas atlas) {
-            // TODO: Use atlas.findRegion() to initialize the standing right AtlasRegion
-
+            standingRight = atlas.findRegion(Constants.STANDING_RIGHT);
         }
     }
 }
