@@ -42,7 +42,7 @@ public class GameplayScreen extends ScreenAdapter {
 
     @Override
     public void render(float delta) {
-        // TODO: Call update() on the Level
+        level.update(delta);
 
         viewport.apply();
         Gdx.gl.glClearColor(
