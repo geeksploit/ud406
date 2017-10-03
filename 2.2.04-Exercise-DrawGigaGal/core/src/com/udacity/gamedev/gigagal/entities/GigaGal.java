@@ -2,6 +2,7 @@ package com.udacity.gamedev.gigagal.entities;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
+import com.udacity.gamedev.gigagal.util.Assets;
 import com.udacity.gamedev.gigagal.util.Constants;
 
 public class GigaGal {
@@ -19,8 +20,7 @@ public class GigaGal {
     }
 
     public void render(SpriteBatch batch) {
-
-        // TODO: Draw GigaGal's standing-right sprite at position - GIGAGAL_EYE_POSITION
-
+        batch.draw(Assets.instance.gigaGalAssets.standingRight.getTexture(),
+                Constants.GIGAGAL_EYE_POSITION.x, Constants.GIGAGAL_EYE_POSITION.y);
     }
 }
