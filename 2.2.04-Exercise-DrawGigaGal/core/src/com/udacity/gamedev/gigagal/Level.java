@@ -12,8 +12,7 @@ public class Level {
     }
 
     public void update(float delta) {
-        // TODO: Update GigaGal
-
+        gigaGal.update(delta);
     }
 
     public void render(SpriteBatch batch) {
