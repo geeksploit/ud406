@@ -14,7 +14,7 @@ public class GameplayScreen extends ScreenAdapter {
 
     public static final String TAG = GameplayScreen.class.getName();
 
-    // TODO: Add a Level
+    private Level level;
 
     SpriteBatch batch;
     ExtendViewport viewport;
