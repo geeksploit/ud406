@@ -8,8 +8,7 @@ public class Level {
     private GigaGal gigaGal;
 
     public Level() {
-        // TODO: Initialize GigaGal
-
+        gigaGal = new GigaGal();
     }
 
     public void update(float delta) {
