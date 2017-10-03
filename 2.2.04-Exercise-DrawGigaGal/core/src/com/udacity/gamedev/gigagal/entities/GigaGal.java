@@ -2,6 +2,7 @@ package com.udacity.gamedev.gigagal.entities;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
+import com.udacity.gamedev.gigagal.util.Constants;
 
 public class GigaGal {
 
@@ -10,8 +11,7 @@ public class GigaGal {
     private Vector2 position;
 
     public GigaGal() {
-        // TODO: Initialize GigaGal's position with height = GIGAGAL_EYE_HEIGHT
-
+        position = new Vector2(20, Constants.GIGAGAL_EYE_HEIGHT);
     }
 
     public void update(float delta) {
