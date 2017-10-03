@@ -16,8 +16,7 @@ public class Level {
     }
 
     public void render(SpriteBatch batch) {
-        // TODO: Render GigaGal
-
+        gigaGal.render(batch);
     }
 
 }
