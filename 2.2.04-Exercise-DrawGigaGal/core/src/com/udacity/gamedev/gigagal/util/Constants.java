@@ -12,7 +12,7 @@ public class Constants {
     // TODO: Define a Vector2 Constant for GigaGal's eye position within her sprites (16, 24)
 
 
-    // TODO: Define a float constant for the height of GigaGal's eye above her feet (16)
+    public static final float GIGAGAL_EYE_HEIGHT = 16;
 
 
 }
