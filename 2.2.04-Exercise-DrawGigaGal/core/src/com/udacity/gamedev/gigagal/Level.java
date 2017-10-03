@@ -1,11 +1,11 @@
 package com.udacity.gamedev.gigagal;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.udacity.gamedev.gigagal.entities.GigaGal;
 
 public class Level {
 
-    // TODO: Add a GigaGal member variable
-
+    private GigaGal gigaGal;
 
     public Level() {
         // TODO: Initialize GigaGal
