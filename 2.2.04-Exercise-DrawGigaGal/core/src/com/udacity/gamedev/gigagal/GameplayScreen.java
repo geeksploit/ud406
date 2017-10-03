@@ -54,7 +54,8 @@ public class GameplayScreen extends ScreenAdapter {
 
         batch.setProjectionMatrix(viewport.getCamera().combined);
         batch.begin();
-        // TODO: Render the Level
+
+        level.render(batch);
 
         batch.end();
     }
