@@ -1,5 +1,7 @@
 package com.udacity.gamedev.gigagal.entities;
 
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
@@ -18,7 +20,8 @@ public class GigaGal {
 
     public void update(float delta) {
 
-        // TODO: Use Gdx.input.isKeyPressed() to check if the left arrow key is pressed
+        if (Gdx.input.isKeyPressed(Input.Keys.LEFT)) {
+        }
         // TODO: If so, call moveLeft()
 
 
