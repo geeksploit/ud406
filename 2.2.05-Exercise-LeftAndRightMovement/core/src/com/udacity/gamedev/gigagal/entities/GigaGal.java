@@ -24,7 +24,8 @@ public class GigaGal {
             moveLeft(delta);
         }
 
-
+        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) {
+        }
         // TODO: Do the same with the right ArrowKey
 
     }
