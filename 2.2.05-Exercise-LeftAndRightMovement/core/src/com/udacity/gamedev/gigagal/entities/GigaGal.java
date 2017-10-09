@@ -31,8 +31,7 @@ public class GigaGal {
     }
 
     private void moveLeft(float delta) {
-        // TODO: Move GigaGal left by delta * movement speed
-
+        position.x -= delta * Constants.MOVEMENT_SPEED;
     }
 
     private void moveRight(float delta) {
