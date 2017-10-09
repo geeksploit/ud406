@@ -35,8 +35,7 @@ public class GigaGal {
     }
 
     private void moveRight(float delta) {
-        // TODO: Same for moving GigaGal right
-
+        position.x += delta * Constants.MOVEMENT_SPEED;
     }
 
     public void render(SpriteBatch batch) {
