@@ -16,6 +16,6 @@ public class Constants {
     public static final float GIGAGAL_EYE_HEIGHT = 16.0f;
 
 
-    // TODO: Add a constant for GigaGal's movement speed
+    public static final float MOVEMENT_SPEED = WORLD_SIZE / 10;
 
 }
