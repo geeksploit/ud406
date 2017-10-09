@@ -21,8 +21,8 @@ public class GigaGal {
     public void update(float delta) {
 
         if (Gdx.input.isKeyPressed(Input.Keys.LEFT)) {
+            moveLeft(delta);
         }
-        // TODO: If so, call moveLeft()
 
 
         // TODO: Do the same with the right ArrowKey
