@@ -42,9 +42,7 @@ public class Assets implements Disposable, AssetErrorListener {
     public class GigaGalAssets {
 
         public final AtlasRegion standingRight;
-
-        // TODO: Add another AtlasRegion for the standing-left sprite
-
+        public final AtlasRegion standingLeft;
 
         public GigaGalAssets(TextureAtlas atlas) {
             standingRight = atlas.findRegion(Constants.STANDING_RIGHT);
