@@ -30,8 +30,7 @@ public class GigaGal {
     }
 
     private void moveLeft(float delta) {
-        // TODO: Update facing direction
-
+        facing = Facing.LEFT;
         position.x -= delta * Constants.GIGAGAL_MOVE_SPEED;
     }
 
