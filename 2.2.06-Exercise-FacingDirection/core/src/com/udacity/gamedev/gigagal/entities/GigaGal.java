@@ -13,9 +13,7 @@ public class GigaGal {
     public final static String TAG = GigaGal.class.getName();
 
     Vector2 position;
-
-    // TODO: Add a Facing member variable (defined below)
-
+    Facing facing;
 
     public GigaGal() {
         position = new Vector2(20, Constants.GIGAGAL_EYE_HEIGHT);
