@@ -70,6 +70,7 @@ public class GigaGal {
                 false);
     }
 
-    // TODO: DO THIS FIRST!!! Create an enum called Facing, with LEFT and RIGHT members
-
+    enum Facing {
+        LEFT, RIGHT
+    }
 }
