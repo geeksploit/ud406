@@ -46,10 +46,7 @@ public class Assets implements Disposable, AssetErrorListener {
 
         public GigaGalAssets(TextureAtlas atlas) {
             standingRight = atlas.findRegion(Constants.STANDING_RIGHT);
-
-            // TODO: Find the standing-left AtlasRegion
-
-
+            standingLeft = atlas.findRegion(Constants.STANDING_LEFT);
         }
     }
 }
