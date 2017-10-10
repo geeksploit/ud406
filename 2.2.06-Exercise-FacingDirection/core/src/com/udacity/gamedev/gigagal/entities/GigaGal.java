@@ -17,8 +17,7 @@ public class GigaGal {
 
     public GigaGal() {
         position = new Vector2(20, Constants.GIGAGAL_EYE_HEIGHT);
-        // TODO: Initialize facing, probably with Facing.RIGHT
-
+        facing = Facing.RIGHT;
     }
 
     public void update(float delta) {
