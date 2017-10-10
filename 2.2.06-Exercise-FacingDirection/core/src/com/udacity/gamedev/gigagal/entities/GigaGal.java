@@ -41,10 +41,12 @@ public class GigaGal {
 
     public void render(SpriteBatch batch) {
 
-        TextureRegion region = Assets.instance.gigaGalAssets.standingRight;
-
-        // TODO: Set region to the correct sprite for the current facing direction
-
+        TextureRegion region;
+        if (facing == Facing.RIGHT) {
+             region = Assets.instance.gigaGalAssets.standingRight;
+        } else {
+            region = Assets.instance.gigaGalAssets.standingLeft;
+        }
 
         batch.draw(
                 region.getTexture(),
